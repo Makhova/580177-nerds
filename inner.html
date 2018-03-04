@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нёрдс-Магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="index.html">
+        <img class="main-header-logo" src="img/logo.jpg" alt="Логотип">
+      </a>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <Li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul>
+        <li><a href="#">Войти</a></li>
+      </ul>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+
+    <main>
+      <p>Сортировать:</p>
+      <ul>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По названию</a></li>
+      </ul>
+
+      <section class="project-item sedona">
+        <div class="project-item-top"></div>
+        <a href="#">
+          <img src="img/sedona.jpg" alt="Седона">
+        </a>
+        <div class="sedona-info">
+          <h3>Sedona</h3>
+          <p>Информационный сайт для туристов</p>
+          <a href="#">9900 руб.</a>
+        </div>
+      </section>
+
+      <section class="project-item pink">
+        <div class="project-item-top"></div>
+        <a href="#">
+          <img src="img/pink.jpg" alt="Пинк">
+        </a>
+        <div class="pink-info">
+          <h3>Pink App</h3>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="#">9900 руб.</a>
+        </div>
+      </section><section class="project-item barbershop">
+        <div class="project-item-top"></div>
+        <a href="#">
+          <img src="img/barbershop.jpg" alt="Барбершоп">
+        </a>
+        <div class="barbershop-info">
+          <h3>Barbershop</h3>
+          <p>Сайт салона красоты Для мужчин, да</p>
+          <a href="#">9900 руб.</a>
+        </div>
+      </section><section class="project-item mishka">
+        <div class="project-item-top"></div>
+        <a href="#">
+          <img src="img/mishka.jpg" alt="Мишка">
+        </a>
+        <div class="mishka-info">
+          <h3>Mishka</h3>
+          <p>Интернет-магазин вязаных игрушек</p>
+          <a href="#">9900 руб.</a>
+        </div>
+      </section><section class="project-item a-plus">
+        <div class="project-item-top"></div>
+        <a href="#">
+          <img src="img/a-plus.jpg" alt="A+">
+        </a>
+        <div class="a-plus-info">
+          <h3>A Plus</h3>
+          <p>Лендинг курса повышения квалификации</p>
+          <a href="#">9900 руб.</a>
+        </div>
+      </section><section class="project-item kvast">
+        <div class="project-item-top"></div>
+        <a href="#">
+          <img src="img/kvast.jpg" alt="Кваст">
+        </a>
+        <div class="kvast-info">
+          <h3>Kvast</h3>
+          <p>Промо-сайт производителя крафтового кваса</p>
+          <a href="#">9900 руб.</a>
+        </div>
+      </section>
+      <ol>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Следующая</a></li>
+      </ol>
+    </main>
+
+    <aside>
+      <form action="/echo" method="post">
+        <!-- Ползунок -->
+
+        <p>Сетка:</p>
+        <label>
+          <input type="radio" name="model" value="liquid" checked>
+          Адаптивная
+        </label>
+        <label>
+          <input type="radio" name="model" value="fixed">
+          Фиксированная
+        </label>
+        <label>
+          <input type="radio" name="model" value="flexed">
+          Резиновая
+        </label>
+
+        <p>Особенности:</p>
+        <label>
+          <input type="checkbox" name="slider" checked>
+          Слайдер
+        </label>
+        <label>
+          <input type="checkbox" name="features">
+          Блок преимуществ
+        </label>
+        <label>
+          <input type="checkbox" name="news" checked>
+          Новости
+        </label>
+        <label>
+          <input type="checkbox" name="gallery">
+          Галерея
+        </label>
+        <label>
+          <input type="checkbox" name="cart">
+          Корзина
+        </label>
+
+        <button class="btn show" type="submit">Показать</button>
+
+      </form>
+    </aside>
+
+    <footer class="main-footer">
+      <section class="contacts">
+        <h3>Nёrds Design Studio</h3>
+        <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a href="#">Напишите нам</a>
+      </section>
+      <section class="social-media">
+        <ul>
+          <li><a href="#">ВКонтакте</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграм</a></li>
+        </ul>
+        <p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+
+    <form action="/echo" method="post">
+      <h2>Напишите нам</h2>
+      <label for="user-name">Ваше имя:
+        <input type="text" id="user-name" name="name" value="Имя Фамилия">
+      </label>
+      <label for="user-email">Ваше e-mail:
+        <input type="email" id="user-email" name="name" value="email@example.com">
+      </label>
+      <label for="comment">Текст письма:
+        <textarea id="comment" name="comment" rows="5">В свободной форме</textarea>
+      </label>
+      <button type="submit">Напишите нам</button>
+    </form>
+  </body>
+</html>
