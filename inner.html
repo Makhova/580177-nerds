@@ -7,156 +7,196 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html">
-        <img class="main-header-logo" src="img/logo.jpg" alt="Логотип">
-      </a>
-      <nav class="main-menu">
-        <ul>
+      <h2 class="visually-hidden">Навигация по сайту</h2>
+      <div class="main-header-logo-container">
+        <a href="index.html">
+          <img class="main-header-logo" src="img/logo.jpg"
+          alt="Логотип Студии Нёрдз">
+        </a>
+      <div>
+      <div class="main-menu-container>"
+        <nav class="main-menu">
+          <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <Li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cart-container">
+        <ul>
+          <li><a href="#">Корзина</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="#">Войти</a></li>
-      </ul>
-      <h1>Магазин готовых шаблонов</h1>
+      </div>
     </header>
 
     <main>
+      <section>
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form action="/echo" method="post">
+          <fieldset>
+            <legnd>Стоимость:</legend>
+            <input type="range" name="price">
+            <label>От
+              <input type="text" name="min">
+            </label>
+            <label>До
+              <input type="text" name="max">
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input type="radio" id="adptive" name="model" value="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" id="fixed" name="model" value="fixed">
+                <label for="fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" id="flexed" name="model" value="flexed">
+                <label for="flexed">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="slider" name="slider" checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox"id="features" name="features">
+                <label for="features">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" id="news" name="news" checked>
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" id="gallery" name="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" id="cart" name="cart">
+                <label for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="btn show" type="submit">Показать</button>
+
+        </form>
+      </section>
+
+      <section class="projects">
+      <h2 class="visually-hidden">Шаблоны</h2>
       <p>Сортировать:</p>
       <ul>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По названию</a></li>
       </ul>
+      <button class="less" type="button">По убыванию</button>
+      <button class="more" type="button">По возрастанию</button>
 
-      <section class="project-item sedona">
-        <div class="project-item-top"></div>
-        <a href="#">
-          <img src="img/sedona.jpg" alt="Седона">
-        </a>
-        <div class="sedona-info">
-          <h3>Sedona</h3>
-          <p>Информационный сайт для туристов</p>
-          <a href="#">9900 руб.</a>
-        </div>
+      <ul>
+        <li class="project-item sedona">
+          <a href="#">
+            <div class="project-item-top"></div>
+            <img src="img/sedona.jpg" alt="Седона">
+          </a>
+          <div class="sedona-info">
+            <h3>Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <a href="#">9900 руб.</a>
+          </div>
+        </li>
+        <li class="project-item pink">
+          <a href="#">
+            <div class="project-item-top"></div>
+            <img src="img/pink.jpg" alt="Пинк">
+          </a>
+          <div class="pink-info">
+            <h3>Pink App</h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#">9900 руб.</a>
+          </div>
+        </li>
+          <li class="project-item barbershop">
+            <a href="#">
+              <div class="project-item-top"></div>
+              <img src="img/barbershop.jpg" alt="Барбершоп">
+            </a>
+            <div class="barbershop-info">
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты Для мужчин, да</p>
+              <a href="#">9900 руб.</a>
+            </div>
+          </li>
+          <li class="project-item mishka">
+            <a href="#">
+              <div class="project-item-top"></div>
+              <img src="img/mishka.jpg" alt="Мишка">
+            </a>
+            <div class="mishka-info">
+              <h3>Mishka</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a href="#">9900 руб.</a>
+            </div>
+          </li>
+          <li class="project-item a-plus">
+            <a href="#">
+              <div class="project-item-top"></div>
+              <img src="img/a-plus.jpg" alt="A+">
+            </a>
+            <div class="a-plus-info">
+              <h3>A Plus</h3>
+              <p>Лендинг курса повышения квалификации</p>
+              <a href="#">9900 руб.</a>
+            </div>
+          </li>
+          <li class="project-item kvast">
+            <a href="#">
+              <div class="project-item-top"></div>
+              <img src="img/kvast.jpg" alt="Кваст">
+            </a>
+            <div class="kvast-info">
+              <h3>Kvast</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a href="#">9900 руб.</a>
+            </div>
+          </li>
+        </ul>
+        <ol>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+        </ol>
       </section>
-
-      <section class="project-item pink">
-        <div class="project-item-top"></div>
-        <a href="#">
-          <img src="img/pink.jpg" alt="Пинк">
-        </a>
-        <div class="pink-info">
-          <h3>Pink App</h3>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a href="#">9900 руб.</a>
-        </div>
-      </section><section class="project-item barbershop">
-        <div class="project-item-top"></div>
-        <a href="#">
-          <img src="img/barbershop.jpg" alt="Барбершоп">
-        </a>
-        <div class="barbershop-info">
-          <h3>Barbershop</h3>
-          <p>Сайт салона красоты Для мужчин, да</p>
-          <a href="#">9900 руб.</a>
-        </div>
-      </section><section class="project-item mishka">
-        <div class="project-item-top"></div>
-        <a href="#">
-          <img src="img/mishka.jpg" alt="Мишка">
-        </a>
-        <div class="mishka-info">
-          <h3>Mishka</h3>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <a href="#">9900 руб.</a>
-        </div>
-      </section><section class="project-item a-plus">
-        <div class="project-item-top"></div>
-        <a href="#">
-          <img src="img/a-plus.jpg" alt="A+">
-        </a>
-        <div class="a-plus-info">
-          <h3>A Plus</h3>
-          <p>Лендинг курса повышения квалификации</p>
-          <a href="#">9900 руб.</a>
-        </div>
-      </section><section class="project-item kvast">
-        <div class="project-item-top"></div>
-        <a href="#">
-          <img src="img/kvast.jpg" alt="Кваст">
-        </a>
-        <div class="kvast-info">
-          <h3>Kvast</h3>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <a href="#">9900 руб.</a>
-        </div>
-      </section>
-      <ol>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
-      </ol>
     </main>
 
-    <aside>
-      <form action="/echo" method="post">
-        <!-- Ползунок -->
-
-        <p>Сетка:</p>
-        <label>
-          <input type="radio" name="model" value="liquid" checked>
-          Адаптивная
-        </label>
-        <label>
-          <input type="radio" name="model" value="fixed">
-          Фиксированная
-        </label>
-        <label>
-          <input type="radio" name="model" value="flexed">
-          Резиновая
-        </label>
-
-        <p>Особенности:</p>
-        <label>
-          <input type="checkbox" name="slider" checked>
-          Слайдер
-        </label>
-        <label>
-          <input type="checkbox" name="features">
-          Блок преимуществ
-        </label>
-        <label>
-          <input type="checkbox" name="news" checked>
-          Новости
-        </label>
-        <label>
-          <input type="checkbox" name="gallery">
-          Галерея
-        </label>
-        <label>
-          <input type="checkbox" name="cart">
-          Корзина
-        </label>
-
-        <button class="btn show" type="submit">Показать</button>
-
-      </form>
-    </aside>
-
     <footer class="main-footer">
-      <section class="contacts">
-        <h3>Nёrds Design Studio</h3>
-        <p>191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#">Напишите нам</a>
+      <section class="address">
+      <h2 class="visually-hidden">Контактная информация</h2>
+        <img class="map" src="img/map.jpg" alt="Офис студии: Санк-Петербург, Больша Конюшенная 19/8">
+        <div class="contacts"
+          <h3>Nёrds Design Studio</h3>
+          <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#">Напишите нам</a>
+        </div>
       </section>
       <section class="social-media">
+      <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li><a href="#">ВКонтакте</a></li>
           <li><a href="#">Фейсбук</a></li>
@@ -168,16 +208,15 @@
 
     <form action="/echo" method="post">
       <h2>Напишите нам</h2>
-      <label for="user-name">Ваше имя:
-        <input type="text" id="user-name" name="name" value="Имя Фамилия">
-      </label>
-      <label for="user-email">Ваше e-mail:
-        <input type="email" id="user-email" name="name" value="email@example.com">
-      </label>
-      <label for="comment">Текст письма:
-        <textarea id="comment" name="comment" rows="5">В свободной форме</textarea>
-      </label>
-      <button type="submit">Напишите нам</button>
+      <button class="write-us-close" type="button">Закрыть</button>
+      <label for="write-us-name">Ваше имя:</label>
+      <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+      <label for="write-us-email">Ваше e-mail:</label>
+      <input type="email" id="write-us-email" name="name" placeholder="email@example.com">
+      <label for="write-us-comment">Текст письма:</label>
+      <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
+      <button class="btn send" type="submit">Отправить</button>
     </form>
+
   </body>
 </html>

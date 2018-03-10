@@ -8,37 +8,50 @@
 
   <body>
     <header class="main-header">
-      <img class="main-header-logo" src="img/logo.jpg" alt="Логотип">
-      <nav class="main-menu">
-        <ul>
+      <h2 class="visually-hidden">Навигация по сайту</h2>
+      <div class="main-header-logo-container">
+        <img class="main-header-logo" src="img/logo.jpg" alt="Логотип Студии Нёрдз">
+      <div>
+      <div class="main-menu-container>"
+        <nav class="main-menu">
+          <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <Li><a href="inner.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cart-container">
+        <ul>
+          <li><a href="#">Корзна</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="#">Войти</a></li>
-      </ul>
-      <div class="main-header-slider slide-1">
-        <p><b>Долго, дорого, скрупулёзно.</b></p>
-        <p>Математически выверенный дизайн для вашего сайта или приложения</p>
-        <a href="#">Узнать больше</a>
-      </div>
-      <div class="main-header-slider slide-2">
-        <p><b>Любим математику, как никто другой.</b></p>
-        <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
-        <a href="#">Узнать больше</a>
-      </div>
-      <div class="main-header-slider slide-2">
-        <p><b>Только ночь, только хардкор.</b></p>
-        <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a href="#">Узнать больше</a>
       </div>
     </header>
 
     <main>
+      <section class="promo-slider">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="promo-slider-list">
+          <li class="promo-slider-list-slide promo-slider-list-slide1">
+            <p><b>Долго, дорого, скрупулёзно.</b></p>
+            <p>Математически выверенный дизайн для вашего сайта или приложения</p>
+            <a href="#">Узнать больше</a>
+          </li>
+          <li class="promo-slider-list-slide promo-slider-list-slide2">
+            <p><b>Любим математику, как никто другой.</b></p>
+            <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
+            <a href="#">Узнать больше</a>
+          </li>
+          <li class="promo-slider-list-slide promo-slider-list-slide3">
+            <p><b>Только ночь, только хардкор.</b></p>
+            <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </section>
       <section class="features">
+        <h2 class="visually-hidden">Услуги</h2>
         <ul>
           <li class="feature-1">
             <h3>Веб-сайты</h3>
@@ -58,29 +71,36 @@
         </ul>
       </section>
       <section class="studio-info">
-        <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайд-шоу и видео для корпоративных презентаций</li>
-        </ul>
-        <p>С 2004 года любим точность во всём:</p>
-        <table class="studio-info-numbers">
-          <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
-          </tr>
-          <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </table>
+        <h2 class="visually-hidden">Информация о студии</h2>
+        <div class="studio-info-services">
+          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Выполняем заказы на разработку:</p>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайд-шоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="studio-info-numbers">
+          <img class="studio-logo" src="img/studio-logo.jpg" alt="Логотип Студии Нёрдз">
+          <p>С 2004 года любим точность во всём:</p>
+          <table>
+            <tr>
+              <td>146%</td>
+              <td>100%</td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <th>Уровень самоотдачи</th>
+              <th>Соблюдение сроков</th>
+              <th>Минимальная предоплата</th>
+            </tr>
+          </table>
+        </div>
       </section>
       <section class="main-projects">
+      <h2 class="visually-hidden">Основные проекты</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/project-logo-1.jpg" alt="HTML Academy"></a>
         <a href="#"><img src="img/project-logo-2.jpg" alt="Barbershop Borodinsky"></a>
         <a href="#"><img src="img/project-logo-3.jpg" alt="Pink"></a>
@@ -89,14 +109,19 @@
     </main>
 
     <footer class="main-footer">
-      <section class="contacts">
-        <h3>Nёrds Design Studio</h3>
-        <p>191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#">Напишите нам</a>
+      <section class="address">
+      <h2 class="visually-hidden">Контактная информация</h2>
+        <img class="map" src="img/map.jpg" alt="Офис студии: Санк-Петербург, Больша Конюшенная 19/8">
+        <div class="contacts"
+          <h3>Nёrds Design Studio</h3>
+          <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#">Напишите нам</a>
+        </div>
       </section>
       <section class="social-media">
+      <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li><a href="#">ВКонтакте</a></li>
           <li><a href="#">Фейсбук</a></li>
@@ -108,15 +133,13 @@
 
     <form action="/echo" method="post">
       <h2>Напишите нам</h2>
-      <label for="user-name">Ваше имя:
-        <input type="text" id="user-name" name="name" value="Имя Фамилия">
-      </label>
-      <label for="user-email">Ваше e-mail:
-        <input type="email" id="user-email" name="name" value="email@example.com">
-      </label>
-      <label for="comment">Текст письма:
-        <textarea id="comment" name="comment" rows="5">В свободной форме</textarea>
-      </label>
+      <button class="write-us-close" type="button">Закрыть</button>
+      <label for="write-us-name">Ваше имя:</label>
+      <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+      <label for="write-us-email">Ваше e-mail:</label>
+      <input type="email" id="write-us-email" name="name" placeholder="email@example.com">
+      <label for="write-us-comment">Текст письма:</label>
+      <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
       <button class="btn send" type="submit">Отправить</button>
     </form>
 
