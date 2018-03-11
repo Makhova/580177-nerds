@@ -13,8 +13,8 @@
           <img class="index-logo" src="img/index-logo.svg"
           alt="Логотип Студии Нёрдз">
         </a>
-      <div>
-      <div class="main-menu-container>"
+      </div>
+      <div class="main-menu-container">
         <nav class="main-menu">
           <ul>
           <li><a href="#">Студия</a></li>
@@ -36,7 +36,7 @@
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form action="/echo" method="post">
           <fieldset>
-            <legnd>Стоимость:</legend>
+            <legend>Стоимость:</legend>
             <input type="range" name="price">
             <label>От
               <input type="text" name="min">
@@ -50,7 +50,7 @@
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <input type="radio" id="adptive" name="model" value="adaptive" checked>
+                <input type="radio" id="adaptive" name="model" value="adaptive" checked>
                 <label for="adaptive">Адаптивная</label>
               </li>
               <li>
@@ -72,7 +72,7 @@
                 <label for="slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox"id="features" name="features">
+                <input type="checkbox" id="features" name="features">
                 <label for="features">Блок преимуществ</label>
               </li>
               <li>
@@ -187,7 +187,7 @@
       <section class="address">
       <h2 class="visually-hidden">Контактная информация</h2>
         <img class="map" src="img/map.jpg" alt="Офис студии: Санк-Петербург, Больша Конюшенная 19/8">
-        <div class="contacts"
+        <div class="contacts">
           <h3>Nёrds Design Studio</h3>
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
@@ -204,19 +204,20 @@
         </ul>
         <p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
       </section>
-    </footer>
 
-    <form action="/echo" method="post">
-      <h2>Напишите нам</h2>
-      <button class="write-us-close" type="button">Закрыть</button>
-      <label for="write-us-name">Ваше имя:</label>
-      <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
-      <label for="write-us-email">Ваше e-mail:</label>
-      <input type="email" id="write-us-email" name="name" placeholder="email@example.com">
-      <label for="write-us-comment">Текст письма:</label>
-      <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
-      <button class="btn send" type="submit">Отправить</button>
-    </form>
+      <form action="/echo" method="post">
+        <h2>Напишите нам</h2>
+        <button class="write-us-close" type="button">Закрыть</button>
+        <label for="write-us-name">Ваше имя:</label>
+        <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+        <label for="write-us-email">Ваше e-mail:</label>
+        <input type="email" id="write-us-email" name="name" placeholder="email@example.com">
+        <label for="write-us-comment">Текст письма:</label>
+        <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
+        <button class="btn send" type="submit">Отправить</button>
+      </form>
+
+    </footer>
 
   </body>
 </html>
