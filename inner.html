@@ -205,17 +205,19 @@
         <p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
       </section>
 
-      <form action="/echo" method="post">
-        <h2>Напишите нам</h2>
-        <button class="write-us-close" type="button">Закрыть</button>
-        <label for="write-us-name">Ваше имя:</label>
-        <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
-        <label for="write-us-email">Ваше e-mail:</label>
-        <input type="email" id="write-us-email" name="name" placeholder="email@example.com">
-        <label for="write-us-comment">Текст письма:</label>
-        <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
-        <button class="btn send" type="submit">Отправить</button>
-      </form>
+      <div class="modal window"
+        <form action="/echo" method="post">
+          <h2>Напишите нам</h2>
+          <button class="write-us-close" type="button">Закрыть</button>
+          <label for="write-us-name">Ваше имя:</label>
+          <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+          <label for="write-us-email">Ваше e-mail:</label>
+          <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+          <label for="write-us-comment">Текст письма:</label>
+          <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
+          <button class="btn send" type="submit">Отправить</button>
+        </form>
+      </div>
 
     </footer>
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс-Главная</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normolize.css">
   </head>
 
   <body>
@@ -12,7 +12,6 @@
       <div class="index-logo-container">
         <img class="index-logo" src="img/index-logo.svg" alt="Логотип Студии Нёрдз">
       </div>
-      <div class="main-menu-container">
         <nav class="main-menu">
           <ul>
           <li><a href="#">Студия</a></li>
@@ -21,34 +20,32 @@
           <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="cart-container">
         <ul>
           <li><a href="#">Корзна</a></li>
         </ul>
-      </div>
     </header>
 
     <main>
-      <section class="promo-slider">
+      <section class="promo">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul>
-          <li class="promo-slide promo-slider-slide1">
-            <p><b>Долго, дорого, скрупулёзно.</b></p>
-            <p>Математически выверенный дизайн для вашего сайта или приложения</p>
-            <a href="#">Узнать больше</a>
-          </li>
-          <li class="promo-slider-slide promo-slider-slide2">
-            <p><b>Любим математику, как никто другой.</b></p>
-            <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
-            <a href="#">Узнать больше</a>
-          </li>
-          <li class="promo-slider-slide promo-slider-slide3">
-            <p><b>Только ночь, только хардкор.</b></p>
-            <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#">Узнать больше</a>
-          </li>
-        </ul>
+        <div class="promo-slider"
+          <ul>
+            <li class="promo-slider-slide promo-slider-slide1">
+              <p><b>Долго, дорого, скрупулёзно.</b></p>
+              <p>Математически выверенный дизайн для вашего сайта или приложения</p>
+              <a href="#">Узнать больше</a>
+            </li>
+            <li class="promo-slider-slide promo-slider-slide2">
+              <p><b>Любим математику, как никто другой.</b></p>
+              <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
+              <a href="#">Узнать больше</a>
+            </li>
+            <li class="promo-slider-slide promo-slider-slide3">
+              <p><b>Только ночь, только хардкор.</b></p>
+              <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a href="#">Узнать больше</a>
+            </li>
+          </ul>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Услуги</h2>
@@ -129,19 +126,22 @@
         </ul>
         <p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
       </section>
-    </footer>
 
-    <form action="/echo" method="post">
-      <h2>Напишите нам</h2>
-      <button class="write-us-close" type="button">Закрыть</button>
-      <label for="write-us-name">Ваше имя:</label>
-      <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
-      <label for="write-us-email">Ваше e-mail:</label>
-      <input type="email" id="write-us-email" name="name" placeholder="email@example.com">
-      <label for="write-us-comment">Текст письма:</label>
-      <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
-      <button class="btn send" type="submit">Отправить</button>
-    </form>
+      <div class="modal window"
+        <form action="/echo" method="post">
+          <h2>Напишите нам</h2>
+          <button class="write-us-close" type="button">Закрыть</button>
+          <label for="write-us-name">Ваше имя:</label>
+          <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+          <label for="write-us-email">Ваше e-mail:</label>
+          <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+          <label for="write-us-comment">Текст письма:</label>
+          <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
+          <button class="btn send" type="submit">Отправить</button>
+        </form>
+      </div>
+
+    </footer>
 
   </body>
 </html>
