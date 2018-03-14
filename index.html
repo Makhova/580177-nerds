@@ -4,28 +4,29 @@
     <meta charset="utf-8">
     <title>Нёрдс-Главная</title>
     <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="main-header">
-      <h2 class="visually-hidden">Навигация по сайту</h2>
       <div class="index-logo-container">
         <img class="index-logo" src="img/index-logo.svg" alt="Логотип Студии Нёрдз">
       </div>
-        <nav class="main-menu">
-          <ul>
+      <nav class="main-menu">
+        <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <Li><a href="inner.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul>
-          <li><a href="#">Корзна</a></li>
         </ul>
+      </nav>
+      <ul class="cart">
+        <li><a href="#">Корзна</a></li>
+      </ul>
     </header>
 
     <main>
+	    <h1 class="visually-hidden">Дизайн-студия Нёрдз</h1>
       <section class="promo">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="promo-slider">
@@ -51,17 +52,17 @@
       <section class="features">
         <h2 class="visually-hidden">Услуги</h2>
         <ul>
-          <li class="feature-1">
+          <li class="feature feature-1">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того. как увидит ваш сайт!</p>
             <a href="#">Заказать</a>
           </li>
-          <li class="feature-2">
+          <li class="feature feature-2">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play!</p>
             <a href="#">Заказать</a>
           </li>
-          <li class="feature-3">
+          <li class="feature feature-3">
             <h3>Презентации</h3>
             <p>Вы даже не представляете, насколько вы изумительны!</p>
             <a href="#">Заказать</a>
@@ -70,7 +71,7 @@
       </section>
       <section class="studio-info">
         <h2 class="visually-hidden">Информация о студии</h2>
-        <div class="studio-info-services">
+        <div class="studio-services">
           <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.</p>
           <p>Выполняем заказы на разработку:</p>
@@ -80,7 +81,7 @@
             <li>Слайд-шоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="studio-info-numbers">
+        <div class="studio-numbers">
           <img class="studio-logo" src="img/studio-logo.jpg" alt="Логотип Студии Нёрдз">
           <p>С 2004 года любим точность во всём:</p>
           <table>
@@ -98,7 +99,7 @@
         </div>
       </section>
       <section class="main-projects">
-      <h2 class="visually-hidden">Основные проекты</h2>
+        <h2 class="visually-hidden">Основные проекты</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" alt="HTML Academy"></a>
         <a href="#"><img src="img/barbershop-logo.png" alt="Barbershop Borodinsky"></a>
         <a href="#"><img src="img/pink-logo.png" alt="Pink"></a>
@@ -107,10 +108,10 @@
     </main>
 
     <footer class="main-footer">
-      <section class="address">
-      <h2 class="visually-hidden">Контактная информация</h2>
+      <section class="footer-address">
+        <h2 class="visually-hidden">Контактная информация</h2>
         <img class="map" src="img/map.jpg" alt="Офис студии: Санк-Петербург, Больша Конюшенная 19/8">
-        <div class="contacts">
+        <div class="footer-contacts">
           <h3>Nёrds Design Studio</h3>
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
@@ -119,7 +120,7 @@
         </div>
       </section>
       <section class="social-media">
-      <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li><a href="#">ВКонтакте</a></li>
           <li><a href="#">Фейсбук</a></li>
@@ -128,14 +129,16 @@
         <p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
       </section>
 
-      <div class="modal-window">
-        <form action="/echo" method="post">
+      <div class="write-us">
+        <form action="https://echo.htmlacademy.ru/" method="post">
           <h2>Напишите нам</h2>
           <button class="write-us-close" type="button">Закрыть</button>
-          <label for="write-us-name">Ваше имя:</label>
-          <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
-          <label for="write-us-email">Ваше e-mail:</label>
-          <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+	        <p>
+            <label for="write-us-name">Ваше имя:</label>
+            <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+            <label for="write-us-email">Ваше e-mail:</label>
+            <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+	        </p>
           <label for="write-us-comment">Текст письма:</label>
           <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
           <button class="btn send" type="submit">Отправить</button>
