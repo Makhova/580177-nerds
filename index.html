@@ -2,11 +2,152 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс-Главная</title> 
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+  <body>
+    <header class="main-header">
+      <div class="index-logo-container">
+        <img class="index-logo" src="img/index-logo.svg" alt="Логотип Студии Нёрдз">
+      </div>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <Li><a href="inner.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="cart">
+        <li><a href="#">Корзина</a></li>
+      </ul>
+    </header>
+
+    <main>
+	    <h1 class="visually-hidden">Дизайн-студия Нёрдз</h1>
+      <section class="promo">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="promo-slider">
+          <ul>
+            <li class="promo-slide promo-slide1">
+              <p><b>Долго, дорого, скрупулёзно.</b></p>
+              <p>Математически выверенный дизайн для вашего сайта или приложения</p>
+              <a href="#">Узнать больше</a>
+            </li>
+            <li class="promo-slide promo-slide2">
+              <p><b>Любим математику, как никто другой.</b></p>
+              <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
+              <a href="#">Узнать больше</a>
+            </li>
+            <li class="promo-slide promo-slide3">
+              <p><b>Только ночь, только хардкор.</b></p>
+              <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a href="#">Узнать больше</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul>
+          <li class="feature feature1">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того. как увидит ваш сайт!</p>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="feature feature2">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play!</p>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="feature feature3">
+            <h3>Презентации</h3>
+            <p>Вы даже не представляете, насколько вы изумительны!</p>
+            <a href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="studio-info">
+        <h2 class="visually-hidden">Информация о студии</h2>
+        <div class="studio-services">
+          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="bold">Выполняем заказы на разработку:</p>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайд-шоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="studio-numbers">
+          <img class="studio-logo" src="img/studio-logo.jpg" alt="Логотип Студии Нёрдз">
+          <p>С 2004 года любим точность во всём:</p>
+          <table>
+            <tr>
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
+            </tr>
+            <tr>
+              <th>Уровень самоотдачи</th>
+              <th>Соблюдение сроков</th>
+              <th>Минимальная предоплата</th>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="main-projects">
+        <h2 class="visually-hidden">Основные проекты</h2>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" alt="HTML Academy"></a>
+        <a href="#"><img src="img/barbershop-logo.png" alt="Barbershop Borodinsky"></a>
+        <a href="#"><img src="img/pink-logo.png" alt="Pink"></a>
+        <a href="#"><img src="img/mishka-logo.png" alt="Mishka"></a>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <section class="footer-address">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <img class="map" src="img/map.jpg" alt="Офис студии: Санк-Петербург, Больша Конюшенная 19/8">
+        <div class="footer-contacts">
+          <h3>Nёrds Design Studio</h3>
+          <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#">Напишите нам</a>
+        </div>
+      </section>
+      <section class="social-media">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul>
+          <li><a class="vk" href="#">ВКонтакте</a></li>
+          <li><a class="fb" href="#">Фейсбук</a></li>
+          <li><a class="insta" href="#">Инстаграм</a></li>
+        </ul>
+        <p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+
+      <div class="write-us">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <h2>Напишите нам</h2>
+          <button class="write-us-close" type="button">Закрыть</button>
+	        <p>
+            <label for="write-us-name">Ваше имя:</label>
+            <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+            <label for="write-us-email">Ваше e-mail:</label>
+            <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+	        </p>
+          <p>
+            <label for="write-us-comment">Текст письма:</label>
+            <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
+          </p>
+          <button class="btn send" type="submit">Отправить</button>
+        </form>
+      </div>
+
+    </footer>
 
   </body>
 </html>
