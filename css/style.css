@@ -401,13 +401,13 @@ h1 {
   background-color: #fb565a;
 }
 
-.current {
+.current-page {
   display: inline-block;
   border-bottom: 2px solid #fb565a;
 }
 
 .project-filter legend,
-.project-catalog p:first-of-type {
+.project-catalog > p {
   font-size: 18px;
   line-height: 30px;
   font-family: "Roboto-Bold", "Arial", sans-serif;
@@ -435,6 +435,124 @@ h1 {
 }
 
 .show {
+  display: block;
   color: #000000;
   background-color: #eeeeee;
+}
+
+.show:hover,
+.show:focus {
+  background-color: #dfdfdf;
+}
+
+.show:active {
+  border-top: 2px solid #bfbfbf;
+  opacity: 0.3;
+}
+
+.project-catalog ul {
+  list-style: none;
+}
+
+.project-order a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.project-order a:hover,
+.project-order a:focus {
+  opacity: 0.6;
+}
+
+.project-order a:active,
+.current-order {
+  opacity: 1;
+}
+
+.down,
+.up {
+  background-repeat: no-repeat;
+}
+
+.down {
+  background-image: url("../img/icon-down.png");
+}
+
+.up {
+  background-image: url("../img/icon-up.svg");
+}
+
+.project-top {
+  min-width: 360px;
+  min-height: 40px;
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+}
+
+.project-item:hover .project-top,
+.project-item:focus .project-top {
+  opacity: 0.12;
+}
+
+.project-info {
+  background-color: #eeeeee;
+}
+
+.project-info h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Roboto-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.project-info p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.project-info a {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.project-info a:hover,
+.project-info a:focus {
+  background-color: #e74246;
+}
+
+.project-info a:active {
+  background-color: #d7373b;
+}
+
+.paginator a {
+  display: inline-block;
+  line-height: 18px;
+  font-family: "Roboto-Medium", Arial, sans-serif;
+  color: #000000;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+}
+
+.paginator a:hover,
+.paginator a:focus {
+  background-color: #dfdfdf;
+}
+
+.paginator a:focus {
+  background-color: #dfdfdf;
+}
+
+.paginator a:active {
+  border-top: 2px solid #bfbfbf;
+  opacity: 0.3;
+}
+
+.paginator .current {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #dbdbdb;
+  background-color: #ffffff;
 }
