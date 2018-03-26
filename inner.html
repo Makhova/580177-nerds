@@ -8,44 +8,46 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <header class="main-header">
-        <div class="container">
-          <nav class="main-menu">
-            <div>
-              <img class="index-logo" src="img/index-logo.svg" alt="Логотип Студии Нёрдз">
-            </div>
-            <ul class="site-menu">
-              <li><a href="#">Студия</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <Li><a href="inner.html">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="cart">
-              <li><a href="#">Корзина</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </div>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-menu">
+          <a href="index.html">
+            <img class="index-logo" src="img/index-logo.svg" alt="Логотип Студии Нёрдз">
+          </a>
+          <ul class="site-menu">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <Li><a class="current-page" href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="cart">
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
-      <div class="wrapper">
-	      <h1 class="inner-heading">Магазин готовых шаблонов</h1>
-      </div>
+	    <h1 class="inner-heading">Магазин готовых шаблонов</h1>
       <div class="container project-container">
         <section class="project-filter">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="price-sort">
+            <fieldset class="price-range">
               <legend>Стоимость:</legend>
-              <input type="range" name="price">
-              <p>
+              <div class="price-controls">
+            	  <div class="scale">
+              	  <div class="bar"></div>
+            	  </div>
+            	  <div class="toggle toggle-min"></div>
+            	  <div class="toggle toggle-max"></div>
+          	  </div>
+              <p class="price-indicator">
                 <label>От
-                  <input type="text" name="min">
+                  <input type="text" name="min" value="0">
                 </label>
                 <label>До
-                  <input type="text" name="max">
+                  <input type="text" name="max" value="15 000">
                 </label>
               </p>
             </fieldset>
@@ -53,17 +55,26 @@
             <fieldset class="model-choice">
               <legend>Сетка:</legend>
               <ul>
-                <li>
-                  <input type="radio" id="adaptive" name="model" value="adaptive" checked>
-                  <label for="adaptive">Адаптивная</label>
+                <li class="model">
+                  <label>
+                    <input class="visually-hidden" type="radio" name="model" value="adaptive" checked>
+                    <span class="radio-indicator"></span>
+                    Адаптивная
+                  </label>
                 </li>
-                <li>
-                  <input type="radio" id="fixed" name="model" value="fixed">
-                  <label for="fixed">Фиксированная</label>
+                <li class="model">
+                  <label>
+                    <input class="visually-hidden" type="radio" name="model" value="fixed">
+                    <span class="radio-indicator"></span>
+                    Фиксированная
+                  </label>
                 </li>
-                <li>
-                  <input type="radio" id="flexed" name="model" value="flexed">
-                  <label for="flexed">Резиновая</label>
+                <li class="model">
+                  <label>
+                    <input class="visually-hidden" type="radio" name="model" value="flexed">
+                    <span class="radio-indicator"></span>
+                    Резиновая
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -71,31 +82,45 @@
             <fieldset class="components">
               <legend>Особенности:</legend>
               <ul>
-                <li>
-                  <input type="checkbox" id="slider" name="slider" checked>
-                  <label for="slider">Слайдер</label>
+                <li class="component">
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="slider" checked>
+                    <span class="checkbox-indicator"></span>
+                    Слайдер
+                  </label>
                 </li>
-                <li>
-                  <input type="checkbox" id="advantages" name="advantages">
-                  <label for="advantages">Блок преимуществ</label>
+                <li class="component">
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="advantages">
+                    <span class="checkbox-indicator"></span>
+                    Блок преимуществ
+                  </label>
                 </li>
-                <li>
-                  <input type="checkbox" id="news" name="news" checked>
-                  <label for="news">Новости</label>
+                <li class="component">
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="news" checked>
+                    <span class="checkbox-indicator"></span>
+                    Новости
+                  </label>
                 </li>
-                <li>
-                  <input type="checkbox" id="gallery" name="gallery">
-                  <label for="gallery">Галерея</label>
+                <li class="component">
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="gallery">
+                    <span class="checkbox-indicator"></span>
+                    Галерея
+                  </label>
                 </li>
-                <li>
-                  <input type="checkbox" id="cart" name="cart">
-                  <label for="cart">Корзина</label>
+                <li class="component">
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="cart">
+                    <span class="checkbox-indicator"></span>
+                    Корзина
+                  </label>
                 </li>
               </ul>
             </fieldset>
 
             <button class="btn" type="submit">Показать</button>
-
           </form>
         </section>
 
@@ -108,8 +133,8 @@
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
             </ul>
-            <a class="down" href="#">По убыванию</a>
-            <a class="up" href="#">По возрастанию</a>
+            <a class="project-range down" href="#">По убыванию</a>
+            <a class="project-range up" href="#">По возрастанию</a>
           </div>
           <ul class="project-list">
             <li class="project-item sedona">
@@ -119,7 +144,8 @@
               </a>
               <div class="project-info sedona-info">
                 <h3>Sedona</h3>
-                <p>Информационный сайт для туристов</p>
+                <p>Информационный сайт<br>
+                  для туристов</p>
                 <a class="btn" href="#">9900 руб.</a>
               </div>
             </li>
@@ -130,7 +156,8 @@
               </a>
               <div class="project-info pink-info">
                 <h3>Pink App</h3>
-                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                <p>Продуктовый лендинг<br>
+                  приложения для iOS и Android</p>
                 <a class="btn" href="#">9900 руб.</a>
               </div>
             </li>
@@ -141,7 +168,8 @@
               </a>
               <div class="project-info barbershop-info">
                 <h3>Barbershop</h3>
-                <p>Сайт салона красоты Для мужчин, да</p>
+                <p>Сайт салона красоты<br>
+                  Для мужчин, да</p>
                 <a class="btn" href="#">9900 руб.</a>
               </div>
             </li>
@@ -152,7 +180,8 @@
               </a>
               <div class="project-info mishka-info">
                 <h3>Mishka</h3>
-                <p>Интернет-магазин вязаных игрушек</p>
+                <p>Интернет-магазин<br>
+                  вязаных игрушек</p>
                 <a class="btn" href="#">9900 руб.</a>
               </div>
             </li>
@@ -163,7 +192,8 @@
               </a>
               <div class="project-info a-plus-info">
                 <h3>A Plus</h3>
-                <p>Лендинг курса повышения квалификации</p>
+                <p>Лендинг курса<br>
+                  повышения квалификации</p>
                 <a class="btn" href="#">9900 руб.</a>
               </div>
             </li>
@@ -174,7 +204,8 @@
               </a>
               <div class="project-info kvast-info">
                 <h3>Kvast</h3>
-                <p>Промо-сайт производителя крафтового кваса</p>
+                <p>Промо-сайт производителя<br>
+                  крафтового кваса</p>
                 <a class="btn" href="#">9900 руб.</a>
               </div>
             </li>
@@ -186,59 +217,72 @@
             <li><a class="next" href="#">Следующая</a></li>
           </ul>
         </section>
-	      </div>
-      </main>
+	    </div>
+    </main>
 
-      <footer class="main-footer">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <section class="footer-address">
-          <img class="map" src="img/map.jpg" alt="Офис студии: Санк-Петербург, Больша Конюшенная 19/8">
-          <div class="container">
-            <div class="footer-contacts">
-              <h3>Nёrds Design Studio</h3>
-              <p>191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8</p>
-              <p class="tel">тел. +7 (812) 275-75-75</p>
-              <a class="btn" href="#">Напишите нам</a>
-            </div>
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <section class="footer-address">
+        <img class="map" src="img/map.jpg" alt="Офис студии: Санк-Петербург, Больша Конюшенная 19/8">
+        <div class="container">
+          <div class="footer-contacts">
+            <h3>Nёrds Design Studio</h3>
+            <p class="address">191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8</p>
+            <p class="tel">тел. +7 (812) 275-75-75</p>
+            <a class="btn" href="#">Напишите нам</a>
           </div>
-        </section>
+          <div class="map-marker">
+            <img src="img/map-marker.png" alt="Указатель дизайн-студии Нёрдз">
+          </div>
+        </div>
 
-        <section class="social-media">
-          <div class="container">
-            <h2 class="visually-hidden">Социальные сети</h2>
-            <ul>
-              <li><a class="vk" href="#">ВКонтакте</a></li>
-              <li><a class="fb" href="#">Фейсбук</a></li>
-              <li><a class="insta" href="#">Инстаграм</a></li>
-            </ul>
-            <p>
-              <span class="social-slogan">Давайте дружить, это выгодно!</span>
+      </section>
+
+      <section class="social-media">
+        <div class="container">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul>
+            <li><a class="vk" href="#">ВКонтакте</a></li>
+            <li><a class="fb" href="#">Фейсбук</a></li>
+            <li><a class="insta" href="#">Инстаграм</a></li>
+          </ul>
+          <p>
+            <span class="social-slogan">Давайте дружить, это выгодно!</span>
               Скидка 10% для друзей из социальных сетей
+          </p>
+        </div>
+      </section>
+    </footer>
+
+    <section class="write-us">
+      <div class="write-us-container">
+        <header class="write-us-header">
+          <h2>Напишите нам</h2>
+          <p class="write-us-close">
+            <button class="visually-hidden" type="button">Закрыть</button>
+            <span class="button-indicator"></span>
+          </p>
+        </header>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <div class="user-info">
+            <p>
+              <label for="write-us-name">Ваше имя:</label>
+              <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="write-us-email">Ваше e-mail:</label>
+              <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
             </p>
           </div>
-        </section>
-
-        <div class="write-us">
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="write-us-container">
-              <h2>Напишите нам</h2>
-              <button class="write-us-close" type="button">Закрыть</button>
-  	          <p class="user-info">
-                <label for="write-us-name">Ваше имя:</label>
-                <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
-                <label for="write-us-email">Ваше e-mail:</label>
-                <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
-  	          </p>
-              <p class="feedback">
-                <label for="write-us-comment">Текст письма:</label>
-                <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
-              </p>
-              <button class="btn btn-submit" type="submit">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </footer>
+          <p class="feedback">
+            <label for="write-us-comment">Текст письма:</label>
+            <textarea id="write-us-comment" name="comment" rows="5">В свободной форме</textarea>
+          </p>
+          <button class="btn btn-submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
 
