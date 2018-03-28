@@ -548,9 +548,24 @@ ul {
   background-color: #e9e5dc;
 }
 
+.footer-address iframe {
+  position: relative;
+  z-index: 2;
+  border: 0;
+}
+
+.footer-address .map {
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
+
 .footer-contacts {
   position: absolute;
-  top: 135px;
+  top: 55px;
+  z-index: 2;
   width: 220px;
   padding: 50px;
   background-color: #ffffff;
@@ -594,12 +609,6 @@ ul {
   color: rgba(0,0,0,0.3);
   background-color: #d7373b;
   box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1) inset;
-}
-
-.map-marker {
-  position: absolute;
-  top: 135px;;
-  left: 680px;
 }
 
 .social-media {
