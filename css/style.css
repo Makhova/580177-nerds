@@ -91,6 +91,7 @@ ul {
 }
 
 .main-menu a {
+  padding: 0 5px;
   line-height: 30px;
   font-family: "Roboto-Medium", Arial, sans-serif;
   color: #000000;
@@ -266,7 +267,6 @@ ul {
 .features ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .feature p {
