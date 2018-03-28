@@ -363,18 +363,21 @@ ul {
   background-color: #e5a722;
 }
 
+.studio {
+  padding-top: 40px;
+  margin-bottom: 78px;
+}
+
 .studio .container {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 40px;
-  margin-bottom: 78px;
 }
 
 .studio .container::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -40px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -545,6 +548,7 @@ ul {
 .footer-address {
   position: relative;
   width: 100%;
+  margin: 0;
   background-color: #e9e5dc;
 }
 
@@ -553,6 +557,7 @@ ul {
   z-index: 2;
   border: 0;
 }
+
 
 .footer-address .map {
   position: absolute;
@@ -702,6 +707,10 @@ ul {
   padding-top: 70px;
   padding-bottom: 85px;
   background-color: #ffffff;
+}
+
+.js-show {
+  display: block;
 }
 
 .write-us-container {
