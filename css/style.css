@@ -567,8 +567,8 @@ ul {
   top:0;
   left: 0;
   z-index: 1;
-  width: 1440px;
-  height: 415px;
+  width: 100%;
+  height: 100%;
   margin: 0;
 }
 
@@ -983,8 +983,6 @@ ul {
   width: 273px;
   margin-right: 45px;
 }
-
-
 
 .project-order a {
   font-size: 14px;
