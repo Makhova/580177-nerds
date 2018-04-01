@@ -863,10 +863,7 @@ ul {
   line-height: 20px;
 }
 
-.model-label p,
-.component-label p {
-  margin: 0;
-}
+
 
 .model-label .radio-indicator,
 .component-label .checkbox-indicator,
@@ -895,8 +892,8 @@ ul {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.model-label:hover,
-.component-label:hover, {
+.model-label:hover .model-item,
+.component-label:hover .component-item {
   color: #000000;
 }
 
@@ -905,20 +902,14 @@ ul {
   opacity: 1;
 }
 
-.model-label:hover p,
-.component-label:hover p {
-  color: #000000;
+.disabled {
+  color: rgba(40, 49, 54, 0.3);
+  pointer-events: none;
 }
 
 .disabled .radio-indicator,
 .disabled .checkbox-indicator {
   opacity: 0.1;
-}
-
-.disabled,
-.disabled {
-  color: rgba(40, 49, 54, 0.3);
-  pointer-events: none;
 }
 
 .components {
