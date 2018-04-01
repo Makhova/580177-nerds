@@ -716,7 +716,8 @@ ul {
 }
 
 .main-header .current-page:hover,
-.main-header .current-page:focus {
+.main-header .current-page:focus,
+.main-header .current-page:active {
   color: #000000;
 }
 
@@ -875,9 +876,7 @@ ul {
   left: 0;
   width: 27px;
   height: 27px;
-  background-image: url("../img/radio.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
   opacity: 0.4;
 }
 
@@ -887,6 +886,7 @@ ul {
 
 .component input[type="checkbox"] + .checkbox-indicator {
   background-image: url("../img/checkbox.svg");
+
 }
 
 .model input[type="radio"]:checked + .radio-indicator {
@@ -946,6 +946,7 @@ ul {
 .project-filter .btn:hover,
 .project-filter .btn:focus {
   background-color: #dfdfdf;
+  outline: none;
 }
 
 .project-filter .btn:active {
@@ -1048,16 +1049,22 @@ ul {
   margin-bottom: 27px;
 }
 
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+}
+
 .project-top {
   min-width: 360px;
   min-height: 40px;
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
+  opacity: 0.12;
 }
 
 .project-item:hover .project-top,
 .project-item:focus .project-top {
-  opacity: 0.12;
+  opacity: 1;
 }
 
 .project-info {
@@ -1148,10 +1155,14 @@ ul {
 }
 
 .paginator .current,
-.paginator .current:hover {
+.paginator .current:hover,
+.paginator .current:focus,
+.paginator .current:active {
   padding: 14px 0;
   border: 2px solid #dbdbdb;
+  color: #000000;
   background-color: #ffffff;
+  box-shadow: none;
 }
 
 .write-us {
@@ -1271,6 +1282,7 @@ ul {
 .write-us textarea:focus {
   border-color: #000000;
   color: rgba(68, 68, 68, 1);
+  outline: none;
 }
 
 .write-us input:invalid,
@@ -1288,6 +1300,7 @@ ul {
 .write-us .btn:hover,
 .write-us .btn:focus {
   background-color: #e74246;
+  outline: none;
 }
 
 .write-us .btn:active {
