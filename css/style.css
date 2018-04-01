@@ -870,7 +870,9 @@ ul {
 }
 
 .model input[type="radio"] + .radio-indicator,
-.component input[type="checkbox"] + .checkbox-indicator {
+.component input[type="checkbox"] + .checkbox-indicator,
+.model input[type="radio"]:checked + .radio-indicator,
+.component input[type="checkbox"]:checked + .checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -886,7 +888,6 @@ ul {
 
 .component input[type="checkbox"] + .checkbox-indicator {
   background-image: url("../img/checkbox.svg");
-
 }
 
 .model input[type="radio"]:checked + .radio-indicator {
@@ -897,19 +898,10 @@ ul {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.model input[type="radio"]:checked + .radio-indicator,
-.component input[type="checkbox"]:checked + .checkbox-indicator {
-  opacity: 0.4;
-}
-
 .model input[type="radio"]:hover + .radio-indicator,
-.model input[type="radio"]:focus + .radio-indicator,
 .model input[type="radio"]:checked:hover + .radio-indicator,
-.model input[type="radio"]:checked:focus + .radio-indicator,
 .component input[type="checkbox"]:hover + .checkbox-indicator,
-.component input[type="checkbox"]:focus + .checkbox-indicator,
-.component input[type="checkbox"]:checked:hover + .checkbox-indicator,
-.component input[type="checkbox"]:checked:focus + .checkbox-indicator {
+.component input[type="checkbox"]:checked:hover + .checkbox-indicator {
   opacity: 1;
 }
 
