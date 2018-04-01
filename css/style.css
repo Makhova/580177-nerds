@@ -927,8 +927,7 @@ ul {
   margin-left: 5px;
 }
 
-.model input[disabled] + .radio-indicator + p,
-.component input[disabled] + .checkbox-indicator + p {
+.disabled {
   color: rgba(40, 49, 54, 0.3);
 }
 
