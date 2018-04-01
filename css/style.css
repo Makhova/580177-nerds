@@ -856,30 +856,22 @@ ul {
   margin-bottom: 15px;
 }
 
-.model label,
-.component label {
+.model-label,
+.component-label {
   display: flex;
   align-items: center;
   line-height: 20px;
 }
 
-.model label:hover,
-.model label:focus,
-.component label:hover,
-.component label:focus {
-  color: #000000;
+.model-label p,
+.component-label p {
+  margin: 0;
 }
 
-.model .disabled,
-.component .disabled {
-  color: rgba(40, 49, 54, 0.3);
-  pointer-events: none;
-}
-
-.model input[type="radio"] + .radio-indicator,
-.component input[type="checkbox"] + .checkbox-indicator,
-.model input[type="radio"]:checked + .radio-indicator,
-.component input[type="checkbox"]:checked + .checkbox-indicator {
+.model-label .radio-indicator,
+.component-label .checkbox-indicator,
+.model-label:checked .radio-indicator,
+.component-label:checked .checkbox-indicator {
   width: 27px;
   height: 27px;
   margin-right: 7px;
@@ -887,39 +879,46 @@ ul {
   opacity: 0.4;
 }
 
-.model input[type="radio"] + .radio-indicator {
+.model-label input[type="radio"] + .radio-indicator {
   background-image: url("../img/radio.svg");
 }
 
-.component input[type="checkbox"] + .checkbox-indicator {
+.component-label input[type="checkbox"] + .checkbox-indicator {
   background-image: url("../img/checkbox.svg");
 }
 
-.model input[type="radio"]:checked + .radio-indicator {
+.model-label input[type="radio"]:checked + .radio-indicator {
   background-image: url("../img/radio-on.svg");
 }
 
-.component input[type="checkbox"]:checked + .checkbox-indicator {
+.component-label input[type="checkbox"]:checked + .checkbox-indicator {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.model input[type="radio"]:hover + .radio-indicator,
-.model input[type="radio"]:checked:hover + .radio-indicator,
-.component input[type="checkbox"]:hover + .checkbox-indicator,
-.component input[type="checkbox"]:checked:hover + .checkbox-indicator {
+.model-label:hover,
+.component-label:hover, {
+  color: #000000;
+}
+
+.model-label:hover .radio-indicator,
+.component-label:hover .checkbox-indicator {
   opacity: 1;
 }
 
-.disabled input[type="radio"] + .radio-indicator,
-.disabled input[type="checkbox"] + .checkbox-indicator,
-.disabled input[type="radio"]:checked + .radio-indicator,
-.disabled input[type="checkbox"]:checked + .checkbox-indicator {
+.model-label:hover p,
+.component-label:hover p {
+  color: #000000;
+}
+
+.disabled .radio-indicator,
+.disabled .checkbox-indicator {
   opacity: 0.1;
 }
 
-.model p,
-.component p {
-  margin: 0;
+.disabled,
+.disabled {
+  color: rgba(40, 49, 54, 0.3);
+  pointer-events: none;
 }
 
 .components {
